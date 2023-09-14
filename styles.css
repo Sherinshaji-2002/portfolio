@@ -1,0 +1,123 @@
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set an attractive background color for the entire page */
+body {
+    background-color: #f5f5f5; /* Light gray background color */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333; /* Text color for readability */
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #66ccff; /* Change the color on hover */
+}
+
+/* Style the container for sections */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 60px; /* To account for the fixed navigation bar */
+    background-color: white; /* White background for sections */
+    border-radius: 10px; /* Rounded corners for sections */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for sections */
+    transform: perspective(500px) rotateX(0deg); /* Reset 3D effect */
+    position: relative;
+}
+
+/* Style the sections */
+section {
+    text-align: center;
+    padding: 40px 0;
+    transform: perspective(500px) rotateX(0deg); /* Reset 3D effect */
+}
+
+/* Style the hero image */
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin: 20px 0; /* Add a rounded border */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for the image */
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Style the About Me section */
+#about {
+    background-color: #f9f9f9; /* Light gray background color for the About section */
+    color: #333; /* Text color for readability on the background */
+    padding: 80px 0;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333; /* Text color for headings */
+}
+
+#about p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #666; /* Text color for content */
+}
+
+/* Style the Contact section */
+#contact {
+    background-color: #f5f5f5; /* Light gray background color for the Contact section */
+    color: #333; /* Text color for readability on the background */
+    padding: 80px 0;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333; /* Text color for headings */
+}
+
+#contact p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #666; /* Text color for content */
+}
